@@ -1,0 +1,50 @@
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%Tikz template%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+Need to declare this package:
+\usepackage{color}
+\RequirePackage[dvipdfmx]{graphicx}
+\usepackage{tikz}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%Single Figure%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[htbp]
+		\centering
+		\begin{tikzpicture}
+      \node[anchor=south west,inner sep=0] at (0,0){\includegraphics[scale=1.0]{graph/SAMPLE.png}};
+		  \draw[red,ultra thick,rounded corners] (0.0,0.0) rectangle (10.0,10.0);
+		\end{tikzpicture}
+\caption{caption}
+\label{fig:label}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%Minipage Figure%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[htbp]
+	\begin{minipage}[t]{0.5\linewidth}
+		\centering
+    \begin{tikzpicture}
+		  \node[anchor=south west,inner sep=0] at (0,0){\includegraphics[scale=1.0]{graph/SAMPLE1.png}};
+		  \draw[red,ultra thick,rounded corners] (0.0,1.0) rectangle (5.0,5.0);
+		\end{tikzpicture}
+		\caption{caption1}
+		\label{fig:label}
+	\end{minipage}
+	\begin{minipage}[t]{0.5\linewidth}
+		\centering
+		\begin{tikzpicture}
+		  \node[anchor=south west,inner sep=0] at (0,0){\includegraphics[scale=1.0]{graph/SAMPLE2.png}};
+		  \draw[red,ultra thick,rounded corners] (0.0,1.0) rectangle (5.0,5.0);
+		\end{tikzpicture}
+		\caption{caption2}
+		\label{fig:label2}
+	\end{minipage}
+	\caption{caption}
+	\label{fig:label}
+\end{figure}
+
