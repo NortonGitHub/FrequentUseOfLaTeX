@@ -2,7 +2,7 @@
 %%%%%Tikz template%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%
 
-Need to declare this package:
+%Need to declare this package:
 \usepackage{color}
 \RequirePackage[dvipdfmx]{graphicx}
 \usepackage{tikz}
